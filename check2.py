@@ -51,11 +51,11 @@ def spots1(df):
 			if total1 < thr1:
 				total1 += row["単位"]
 				bag1.append((row["科目番号"],row["単位"],row["科目名"]))
-			else:
-				total2 += row["単位"]
-				bag2.append((row["科目番号"],row["単位"],row["科目名"]))
+			#else:
+			#	total2 += row["単位"]
+			#	bag2.append((row["科目番号"],row["単位"],row["科目名"]))
 
-			df = df[df['科目番号'] != row["科目番号"]]
+				df = df[df['科目番号'] != row["科目番号"]]
 
 	# spot1終了
 
